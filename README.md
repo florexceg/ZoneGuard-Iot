@@ -141,15 +141,15 @@ ZoneGuard
 
 ## Live Monitoring Dashboard
 
-_Add screenshot from the `images` folder._
+![Live Monitoring Dashboard](images/livedashboard.png)
 
 ## Activity Log
 
-_Add screenshot from the `images` folder._
+![Activity Log](images/activitylog.png)
 
 ## Wokwi Simulation
 
-_Add screenshot from the `images` folder._
+![Wokwi Simulation](images/wokwi.png)
 
 ---
 
