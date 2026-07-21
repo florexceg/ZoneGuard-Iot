@@ -1,1 +1,946 @@
-
+[
+    {
+        "id": "20a5a4c608733a68",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5cf6b0f119b178ae",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "System Status",
+        "label": "🟢 System Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 700,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4cd14f7900213c3a",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Patient ID",
+        "label": "👤 Patient ID",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 740,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ba0758c33a32a90b",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Current Zone",
+        "label": "📍 Current Zone",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 750,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6affb14fe5e6e129",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Stats",
+        "label": "📡 Reporting Node",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 750,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "256495d5c6a538bb",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Alert",
+        "label": "🚨 Patient Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "97b8b4374f4f7489",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Last Update",
+        "label": "🕒 Last Updated",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f0ac8cbf741d6144",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "13b2a761f39d1f5f"
+            ]
+        ]
+    },
+    {
+        "id": "108c8a5d06d3f4b6",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "eda9a59bb03f2271"
+            ]
+        ]
+    },
+    {
+        "id": "a140c53330bb63de",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "af1e62905214d5ca"
+            ]
+        ]
+    },
+    {
+        "id": "b82d52485bec3cdf",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "bbe13f8ada7db408"
+            ]
+        ]
+    },
+    {
+        "id": "b18a9cc3c26bf03c",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "3b28766eda1dead4"
+            ]
+        ]
+    },
+    {
+        "id": "5e200ffc69a5e483",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "f0ac8cbf741d6144"
+            ]
+        ]
+    },
+    {
+        "id": "13b2a761f39d1f5f",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.patientId",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "4cd14f7900213c3a"
+            ]
+        ]
+    },
+    {
+        "id": "eda9a59bb03f2271",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.zone",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "ba0758c33a32a90b"
+            ]
+        ]
+    },
+    {
+        "id": "af1e62905214d5ca",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.node",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "6affb14fe5e6e129"
+            ]
+        ]
+    },
+    {
+        "id": "bbe13f8ada7db408",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "256495d5c6a538bb"
+            ]
+        ]
+    },
+    {
+        "id": "3b28766eda1dead4",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.timestamp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "97b8b4374f4f7489"
+            ]
+        ]
+    },
+    {
+        "id": "9330d901e06b4422",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/system",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "5393a13b724d77f5"
+            ]
+        ]
+    },
+    {
+        "id": "5393a13b724d77f5",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "4f3804ac6167d1b7"
+            ]
+        ]
+    },
+    {
+        "id": "4f3804ac6167d1b7",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "5cf6b0f119b178ae"
+            ]
+        ]
+    },
+    {
+        "id": "750c1bdff60f941d",
+        "type": "ui-text",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "Latest Event",
+        "label": "📝 Latest Event",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7db2a6f65a62ead0",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "958781ec084e84a8"
+            ]
+        ]
+    },
+    {
+        "id": "958781ec084e84a8",
+        "type": "change",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "750c1bdff60f941d"
+            ]
+        ]
+    },
+    {
+        "id": "40f07a394801f75a",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "108c8a5d06d3f4b6"
+            ]
+        ]
+    },
+    {
+        "id": "03200360a2244cae",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "a140c53330bb63de"
+            ]
+        ]
+    },
+    {
+        "id": "07651dfe9cb47cb1",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "b82d52485bec3cdf"
+            ]
+        ]
+    },
+    {
+        "id": "6c85a42c70b95c43",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "b18a9cc3c26bf03c"
+            ]
+        ]
+    },
+    {
+        "id": "7c3f8f0cb5c51e9a",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "7db2a6f65a62ead0"
+            ]
+        ]
+    },
+    {
+        "id": "0e434c0ec41d8f22",
+        "type": "ui-template",
+        "z": "20a5a4c608733a68",
+        "group": "2b5f6be8e673a411",
+        "page": "",
+        "ui": "",
+        "name": " Activity Log",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "head": "",
+        "format": "<div style=\"padding:10px;font-family:Arial\">\n\n    <div v-for=\"item in msg.payload\"\n         style=\"\n            background:white;\n            border-left:6px solid #1976D2;\n            padding:12px;\n            margin-bottom:12px;\n            border-radius:8px;\n            box-shadow:0 2px 5px rgba(0,0,0,.15);\n         \">\n\n        <div style=\"font-size:20px;\">\n            {{item.icon}}\n        </div>\n\n        <div style=\"font-size:13px;color:gray;\">\n            {{item.time}}\n        </div>\n\n        <div style=\"font-weight:bold;font-size:16px;margin-top:6px;\">\n            {{item.message}}\n        </div>\n\n    </div>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 630,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1113d097cf2a34c4",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 500,
+        "wires": [
+            [
+                "a21485868daf190f"
+            ]
+        ]
+    },
+    {
+        "id": "a21485868daf190f",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 500,
+        "wires": [
+            [
+                "cf56ddf190cc3d5d"
+            ]
+        ]
+    },
+    {
+        "id": "cf56ddf190cc3d5d",
+        "type": "function",
+        "z": "20a5a4c608733a68",
+        "name": "function 1",
+        "func": "let history = flow.get(\"history\") || [];\n\nlet icon = \"🟢\";\n\nif (msg.payload.zone === \"CORRIDOR\") {\n    icon = \"🟡\";\n}\nelse if (msg.payload.zone === \"EXIT\") {\n    icon = \"🔴\";\n}\n\nlet event = {\n    icon: icon,\n    time: msg.payload.timestamp,\n    message: msg.payload.message\n};\n\nhistory.unshift(event);\n\nif (history.length > 10) {\n    history.pop();\n}\n\nflow.set(\"history\", history);\n\nmsg.payload = history;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "0e434c0ec41d8f22"
+            ]
+        ]
+    },
+    {
+        "id": "d6f47ecf4c70945c",
+        "type": "ui-template",
+        "z": "20a5a4c608733a68",
+        "group": "5b5ec266bce78e0b",
+        "page": "",
+        "ui": "",
+        "name": "🚨 Emergency Alert",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "head": "",
+        "format": "<div\n:style=\"{\nbackground:\nmsg.payload.status=='SAFE'\n? '#2E7D32'\n: msg.payload.status=='WARNING'\n? '#F9A825'\n: '#C62828',\n\ncolor:'white',\npadding:'18px',\nborderRadius:'12px',\ntextAlign:'center',\nfontSize:'22px',\nfontWeight:'bold'\n}\">\n\n<div v-if=\"msg.payload.status=='SAFE'\">\n🟢 SAFE\n<br><br>\nPatient is safely inside the restricted area.\n</div>\n\n<div v-else-if=\"msg.payload.status=='WARNING'\">\n🟡 WARNING\n<br><br>\nPatient is currently in the corridor.\n</div>\n\n<div v-else>\n🚨 EMERGENCY\n<br><br>\nPatient has reached the EXIT!\n<br>\nImmediate Staff Attention Required\n</div>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d43fd2e7f25f1f61",
+        "type": "mqtt in",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "topic": "zoneguard/floo2026/events",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e90f44bbf8191c73",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 126,
+        "y": 404,
+        "wires": [
+            [
+                "b6a50af0b373e528"
+            ]
+        ]
+    },
+    {
+        "id": "b6a50af0b373e528",
+        "type": "json",
+        "z": "20a5a4c608733a68",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "d6f47ecf4c70945c"
+            ]
+        ]
+    },
+    {
+        "id": "5b5ec266bce78e0b",
+        "type": "ui-group",
+        "name": "Live Status",
+        "page": "efb6c986063774ae",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e90f44bbf8191c73",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Public",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2b5f6be8e673a411",
+        "type": "ui-group",
+        "name": "📜Activity Log",
+        "page": "37630daede19d568",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "efb6c986063774ae",
+        "type": "ui-page",
+        "name": "ZoneGuard Dashboard",
+        "ui": "90b2b68728d0f02a",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "37630daede19d568",
+        "type": "ui-page",
+        "name": "Activity Log",
+        "ui": "90b2b68728d0f02a",
+        "path": "/page2",
+        "icon": "history",
+        "layout": "grid",
+        "theme": "d5e6aff355ec5458",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "90b2b68728d0f02a",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "d5e6aff355ec5458",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "3698dc9d4f13f819",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2"
+        }
+    }
+]
